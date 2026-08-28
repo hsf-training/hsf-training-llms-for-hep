@@ -34,18 +34,14 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Install requirements of the generated module
-        run: |
-          pip install -r hsf-training-llms-for-hep/requirements.txt
-
       - name: Build the book
         run: |
-          jupyter-book build -W --keep-going hsf-training-llms-for-hep/book/
+          jupyter-book build -W --keep-going book
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
-          path: hsf-training-llms-for-hep/book/_build/html
+          path: book/_build/html
 
   deploy:
     needs: build

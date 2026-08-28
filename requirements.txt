@@ -5,3 +5,4 @@ mdit-py-plugins==0.4.2
 matplotlib
 numpy
 pytest
+pytest-custom_exit_code

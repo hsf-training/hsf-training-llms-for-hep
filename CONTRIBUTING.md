@@ -32,7 +32,7 @@ and to meet some of our community members.
     we will be able to respond more quickly if you use one of the other methods described below.
 
 2. If you have a [GitHub][github] account,
-    or are willing to [create one][github-join],
+    or are willing to create one,
     but do not know how to use Git,
     you can report problems or suggest improvements by [creating an issue][issues].
     This allows us to assign the item to someone
@@ -97,7 +97,6 @@ More information on how to contribute or how to contact us: [HSF training home][
 [hsf-training]: https://hepsoftwarefoundation.org/activities/training.html
 [github]: https://github.com
 [github-flow]: https://guides.github.com/introduction/flow/
-[github-join]: https://github.com/signup
 [how-contribute]: https://docs.github.com/en/get-started/quickstart/contributing-to-projects
 [issues]: https://guides.github.com/features/issues/
 [hsf-training-gfis]: https://github.com/issues?q=is%3Aissue+is%3Aopen+archived%3Afalse+sort%3Aupdated-desc+label%3A%22good+first+issue%22+org%3Ahsf-training
