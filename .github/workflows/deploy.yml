@@ -1,0 +1,62 @@
+name: deploy
+
+# Build the example book generated with the default cookiecutter values
+# and deploy it to this repository's GitHub Pages as a live demo.
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Generate module from the cookiecutter
+        run: |
+          cookiecutter . --no-input --overwrite-if-exists
+
+      - name: Install requirements of the generated module
+        run: |
+          pip install -r book/requirements.txt
+
+      - name: Build the example book
+        run: |
+          jupyter-book build -W --keep-going book/book/
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: book/book/_build/html
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
