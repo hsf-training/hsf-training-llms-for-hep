@@ -38,8 +38,8 @@ jobs:
 
       - name: Install requirements of the generated module
         run: |
-          pip install -r book/requirements.txt
+          pip install -r hsf-training-llms-for-hep/requirements.txt
 
       - name: Build the example book (treat warnings as errors)
         run: |
-          jupyter-book build -W --keep-going book/book/
+          jupyter-book build -W --keep-going hsf-training-llms-for-hep/book/

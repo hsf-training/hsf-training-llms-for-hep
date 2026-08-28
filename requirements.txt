@@ -4,3 +4,4 @@ myst-nb==1.3.0
 mdit-py-plugins==0.4.2
 matplotlib
 numpy
+pytest
