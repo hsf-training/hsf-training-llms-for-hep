@@ -1,4 +1,9 @@
-# From Prototype to Production: Building Sustainable Software
+---
+title: Building Sustainable Software
+subtitle: From Prototype to Production
+description: This tutorial discusses the transition from software prototype to production-ready software, focusing on sustainability and best practices. 
+---
+
 
 AI-assisted coding tools have enabled the rapid development of software prototypes. Between the initial idea and a working 
 prototype, a developer can quickly iterate and test their concepts. However, the transition from prototype to production-ready 
@@ -14,4 +19,15 @@ maintainable:
 
 - **Maintainable**: Over time, many different people will work on the codebase. The software should be easy to understand, modify, and extend. 
 
+Covering these three aspects of software sustainability is a large topic, and this tutorial will focus on introducing some of the 
+key principles and best practices that can help developers build sustainable software when adopting AI-assisted coding tools.
 
+
+## Guidelines for collaborative projects
+
+
+## Software design principles
+
+
+
+## Maintainable code
