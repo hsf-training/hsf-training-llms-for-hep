@@ -95,3 +95,4 @@ This architecture often calls LLM a judge, and it can be much better than other 
 ```python
 Example
 ```
+LLM as a judge can usually intoduce the mistakes, even in the flow that produces correct result, so the work will be affected. One of the way to mitigate such undesirable effect is to use the guardrail or estimate the hallucination rate (uncertainty) and add the logical branch based on this value (if-else statement)
