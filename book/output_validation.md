@@ -1,9 +1,9 @@
 # LLM output validation
-LLMs can produce incorrect results due to wrong setup or hallucination. 
+LLMs can produce incorrect results due to wrong setup or hallucination.
 This chapter will focus on how to detect and measure the mistakes and incorrect code (instructions) produced by the agent.
 
 ## Hallucination and Uncertainties
-Many LLMs, especially small models, don't know the information about the high-energy physics domain well, old codes, or algorithms. This forces them to make mistakes and introduce factual incorrectness. This is possible to catch by measuring the uncertainty level. 
+Many LLMs, especially small models, don't know the information about the high-energy physics domain well, old codes, or algorithms. This forces them to make mistakes and introduce factual incorrectness. This is possible to catch by measuring the uncertainty level.
 For example, semantic entropy, one of the possible uncertainty quantification methods, can be calculated using the algorithm below:
 
 ###### Algorithm: Compute Semantic Entropy
@@ -65,7 +65,7 @@ Example
 ```
 
 ## Code validation.Tool calling
-One of the popular ways to validate produced code is to use an external tool for that. 
+One of the popular ways to validate produced code is to use an external tool for that.
 This is a straightforward way as it doesn't require any test preparation and condition specification.
 Static code analysis inspects the code and verifies whether it contains some syntactic mistakes or incorrect type usage.
 
@@ -80,7 +80,7 @@ stderr_buf = io.StringIO()
 rep = reporter.Reporter(stdout_buf, stderr_buf)
 
 warnings = api.check(code_string, filename="<string>", reporter=rep)
-    
+
 stdout_output = stdout_buf.getvalue()
 stderr_output = stderr_buf.getvalue()
 ```
@@ -88,9 +88,9 @@ stderr_output = stderr_buf.getvalue()
 In case the developer wants to inspect the structural context and dependencies, then one might use the abstract syntax tree parser.
 
 ##  Code validation. LLM as a judge
-Another very popular technique to validate the produced code is to use another LLM. 
-In this way, the agentic behavior will assemble actor-critic architecture where the first actor is the LLM that produced the code, which is verified by another LLM. 
-This architecture often calls LLM a judge, and it can be much better than other tools as it can provide some insights into the mistakes. 
+Another very popular technique to validate the produced code is to use another LLM.
+In this way, the agentic behavior will assemble actor-critic architecture where the first actor is the LLM that produced the code, which is verified by another LLM.
+This architecture often calls LLM a judge, and it can be much better than other tools as it can provide some insights into the mistakes.
 
 ```python
 Example
