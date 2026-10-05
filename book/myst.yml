@@ -18,6 +18,7 @@ project:
     - file: intro.md
     - file: setup.md
     - file: 01-example.md
+    - file: 03-prompt-engineering.md
     - file: notebooks.ipynb
 site:
   template: book-theme
