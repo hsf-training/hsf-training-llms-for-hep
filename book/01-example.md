@@ -1,15 +1,14 @@
 # Example episode
 
-:::{admonition} Overview
-:class: note
-**Questions**
+## Overview
+
+Questions this episode answers:
 
 * FIXME: what question does this episode answer?
 
-**Objectives**
+After working through it you should be able to:
 
 * FIXME: what will learners be able to do after this episode?
-:::
 
 ## Writing content
 
@@ -23,37 +22,28 @@ rng = np.random.default_rng()
 print(rng.normal(size=5))
 ```
 
-Figures placed in this directory can be included with the `figure` directive:
+Figures placed in this directory can be included with the usual Markdown image syntax:
 
-```{figure} hsf-logo.png
-:width: 200px
-:name: hsf-logo
-
-The HSF logo (replace this with your own figures).
-```
+![The HSF logo (replace this with your own figures).](hsf-logo.png)
 
 You can also cite references from `references.bib`, like this evidence for
 predictive coding in auditory cortex {cite}`holdgraf_evidence_2014`.
 
-:::{admonition} Exercise: your first change
-:class: tip
-FIXME: describe a short exercise for the learners here.
-:::
+## Exercise: your first change
 
-::::{admonition} Solution
-:class: dropdown
+FIXME: describe a short exercise for the learners here.
+
+<details>
+<summary>Solution</summary>
+
 FIXME: put the solution to the exercise here.
 
-:::{admonition} Note
-Nested admonitions need more colons on the outer fence than on the inner one.
-:::
-::::
+</details>
 
-:::{admonition} Key Points
-:class: important
+## Key points
+
 * FIXME: first key point of this episode
 * FIXME: second key point of this episode
-:::
 
 ## References
 
