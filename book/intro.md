@@ -2,7 +2,7 @@
 
 An introduction to Large Language Models (LLMs) and its application on software development for HEP and Nuclear Physics
 
-:::{admonition} Prerequisites
+:::{admonition} WIP
 :class: warning
 This Training Module is under development. [Contact us](https://hepsoftwarefoundation.org/activities/training.html) if you would like to contribute. You can also open issues and pull requests in the repository.
 :::
