@@ -1,5 +1,7 @@
 ci:
   autoupdate_schedule: monthly
+  autoupdate_commit_msg: "chore(deps): update pre-commit hooks"
+  autofix_commit_msg: "style: pre-commit fixes"
 
 default_language_version:
   python: python3
