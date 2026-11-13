@@ -17,7 +17,7 @@ There is no application code — the deliverable is the rendered book.
 Jupyter Book 2 needs Node.js (>= 18) on the PATH in addition to the Python package. All book commands are run from inside `book/`.
 
 ```bash
-pip install -r requirements.txt                    # jupyter-book 2.x, jupyter-server, ipykernel, matplotlib, numpy, pytest
+pip install -r requirements.txt                    # jupyter-book 2.x, jupyter-server, ipykernel, matplotlib, numpy, pytest, pytest-custom_exit_code
 cd book
 jupyter book start --execute                      # live-reloading dev server (http://localhost:3000)
 jupyter book build --execute --html --strict      # what CI runs: static site -> book/_build/html/
