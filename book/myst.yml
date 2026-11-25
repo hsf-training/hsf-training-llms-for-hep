@@ -25,7 +25,7 @@ project:
       children:
         - file: toolkit/01-agents-md.md
         - file: toolkit/02-skills.md
-        # The memory chapter goes here as toolkit/03-*.md.
+        - file: toolkit/03-memory.md
 site:
   template: book-theme
   options:

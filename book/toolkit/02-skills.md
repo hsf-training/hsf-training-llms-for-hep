@@ -669,6 +669,8 @@ You stay responsible for the output. A skill makes it more likely that the plot 
 - Put fixed conventions and checks in a bundled script. Search paths differ between tools, and `.agents/skills/` is the most widely read.
 - Read skills like code before installing them, keep secrets out, and version them with the analysis. They don't replace a sandbox or your own review of the output.
 
+The next chapter, [Memory](03-memory.md), describes how agents keep information from one session to the next.
+
 ## References
 
 - [Agent Skills](https://agentskills.io): overview of the standard
